@@ -18,7 +18,8 @@
         </activity>
         <activity android:name=".inicio" />
         <activity android:name=".calculadora" />
-        <activity android:name=".pesoidealcalculado"></activity>
+        <activity android:name=".pesoidealcalculado" />
+        <activity android:name=".Tablas" />
     </application>
 
 </manifest>

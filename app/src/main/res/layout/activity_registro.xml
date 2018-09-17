@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#87C6F7"
+    android:background="#097c7c"
     tools:context=".Registro">
 
     <Button
@@ -17,7 +17,10 @@
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:text="Registro"
+        android:background="@android:color/black"
+        android:text=" Registro "
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -35,7 +38,11 @@
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:text="Iniciar Sesión"
+        android:background="@android:color/black"
+        android:onClick="Onclick1"
+        android:text=" Iniciar Sesión "
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
