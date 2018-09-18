@@ -4,8 +4,10 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Spinner;
 import android.widget.TextView;
 
 public class calculadora extends AppCompatActivity {
@@ -13,7 +15,6 @@ public class calculadora extends AppCompatActivity {
     EditText etPeso, etAltura;
     Button  btCalcular;
     TextView tvIMC;
-    //String imc2;
 
 
     @Override
@@ -24,22 +25,27 @@ public class calculadora extends AppCompatActivity {
         etAltura=(EditText) findViewById(R.id.etAltura);
         btCalcular=(Button) findViewById(R.id.btCalcular);
         tvIMC=(TextView) findViewById(R.id.tvIMC);
+        Spinner spsex= (Spinner) findViewById(R.id.spSex);
+        Spinner spComplexion= (Spinner) findViewById(R.id.spCompl);
+
+        String[] sexo = new String[] {"Hombre", "Mujer"};
+        String[] complexion = new String[] {"Pequeña", "Mediana","Grande"};
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, sexo);
+        ArrayAdapter<String> adapter2 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, complexion);
+        spsex.setAdapter(adapter);
+        spComplexion.setAdapter(adapter2);
 
         btCalcular.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
                 Intent intent= new Intent(calculadora.this, pesoidealcalculado.class);
-
                 double peso, altura, IMC;
                 peso=Double.parseDouble(etPeso.getText().toString());
                 altura=Double.parseDouble(etAltura.getText().toString());
                 IMC=peso/Math.pow(altura,2);
                 String imc2 = String.valueOf(IMC);
-                //tvIMC.setText(""+IMC);
                 intent.putExtra("imc",imc2); //obtener el resultado
                 startActivity(intent);
-
 
             }
         });
