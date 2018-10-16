@@ -24,4 +24,10 @@ public class inicio extends AppCompatActivity {
         Intent intent=new Intent(inicio.this, Tablas.class);
         startActivity(intent);
     }
+
+    public void Inicio_planesEjercicios(View view){
+
+        Intent intent=new Intent(inicio.this, PlanesEjercicios.class);
+        startActivity(intent);
+    }
 }

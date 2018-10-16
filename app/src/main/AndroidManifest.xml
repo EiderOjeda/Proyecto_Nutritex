@@ -22,7 +22,49 @@
         <activity android:name=".Tablas" />
         <activity
             android:name=".Registro"
-            android:label="@string/title_activity_registro"></activity>
+            android:label="@string/title_activity_registro" />
+        <activity android:name=".musculosFlaco" />
+        <activity android:name=".PlanesEjercicios" />
+        <activity android:name="ejerciciosFlacos.BicepsF" />
+        <activity android:name="ejerciciosFlacos.TricepsF" />
+        <activity android:name="ejerciciosFlacos.EspaldaF" />
+        <activity android:name="ejerciciosFlacos.PechoF" />
+        <activity android:name="ejerciciosFlacos.PiernaColaF" />
+
+        <activity android:name=".MusculosNormal" />
+        <activity android:name="ejerciciosNormal.AbdomenN" />
+        <activity android:name="ejerciciosNormal.BicepsN" />
+        <activity android:name="ejerciciosNormal.EspaldaN" />
+        <activity android:name="ejerciciosNormal.PechoN" />
+        <activity android:name="ejerciciosNormal.PiernaColaN" />
+        <activity android:name="ejerciciosNormal.TricepsN" />
+
+        <activity android:name=".MusculoEM" />
+        <activity android:name="ejercicioExtremoMorbido.CardioEM" />
+        <activity android:name="ejercicioExtremoMorbido.BrazoEM" />
+        <activity android:name="ejercicioExtremoMorbido.PiernaEM" />
+
+        <activity android:name=".MusculoS1" />
+        <activity android:name="ejerciciosSobrepeso1.AbdomenS1" />
+        <activity android:name="ejerciciosSobrepeso1.BicepsS1" />
+        <activity android:name="ejerciciosSobrepeso1.CardioS1" />
+        <activity android:name="ejerciciosSobrepeso1.Cardio2S1" />
+        <activity android:name="ejerciciosSobrepeso1.PechoS1" />
+        <activity android:name="ejerciciosSobrepeso1.PiernaColaS1" />
+
+        <activity android:name=".MusculoS2" />
+        <activity android:name="ejerciciosSobrepeso2.AbdomenS2" />
+        <activity android:name="ejerciciosSobrepeso2.Cardio2S2" />
+        <activity android:name="ejerciciosSobrepeso2.CardioS2" />
+        <activity android:name="ejerciciosSobrepeso2.PiernaColaS2" />
+
+        <activity android:name=".MusculosO"/>
+        <activity android:name="ejercicioObesidad1y2.AbdomenO"/>
+        <activity android:name="ejercicioObesidad1y2.Cardio2O"/>
+        <activity android:name="ejercicioObesidad1y2.CardioO">
+
+        </activity>
+
     </application>
 
 </manifest>
